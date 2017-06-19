@@ -1,0 +1,7 @@
+macro (libhandler_las)
+  # find_package(BLAS) doesn't seem to be working on ubuntu 10.04, so revert to using find_library()
+  libhandler_find_library (las "on ubuntu `sudo apt-get install liblas-c-dev`" ${ARGN})
+  if (LAS_FOUND)
+    set (IRPLIB_LAS ${LAS_LIBRARIES})
+  endif ()
+endmacro ()

@@ -1,0 +1,5 @@
+-I/home/gskim/git/las_viewer/src/viewer-qt
+-I/home/gskim/git/las_viewer/build/src/viewer-qt
+-o
+/home/gskim/git/las_viewer/build/src/viewer-qt/moc_container.cpp
+/home/gskim/git/las_viewer/src/viewer-qt/container.h
